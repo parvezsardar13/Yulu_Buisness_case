@@ -12,7 +12,10 @@ Data analysis and business case study exploring user demand, rental trends, and 
 ![Pandas](https://img.shields.io/badge/pandas-data_analysis-150458.svg)
 ![Seaborn](https://img.shields.io/badge/seaborn-visualization-3776AB.svg)
 ![Statsmodels](https://img.shields.io/badge/statsmodels-statistics-green.svg)
-
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black)
+![ANOVA](https://img.shields.io/badge/ANOVA-Statistical_Test-blue.svg)
+![Chi-Square](https://img.shields.io/badge/Chi--Square-Hypothesis_Test-green.svg)
 ---
 
 ## 📌 Project Overview
@@ -29,7 +32,7 @@ Yulu has experienced a dip in revenue, motivating a data-driven investigation in
 ---
 
 ## 📊 Dataset
-* **Source:** [ADD DATASET LINK] (US-style hourly bike-sharing dataset adapted for Yulu case study context).
+* **Source:** [Yulu.csv] 
 * **Dimensions:** 10,886 rows and 12 columns.
 
 | Column Name | Data Type | Description |
@@ -75,18 +78,6 @@ Yulu has experienced a dip in revenue, motivating a data-driven investigation in
 * **Seasonal Differences:** Rentals vary heavily by season ($F = 236.95, p = 6.2 \times 10^{-149}$), peaking in fall (mean 234.4) and summer (mean 215.3), while registering lowest in spring (mean 116.3).
 * **Weather-Season Association:** Weather conditions and seasons are significantly associated ($\chi^2 = 46.10, p = 2.8 \times 10^{-8}$ excluding weather level 4), indicating specific weather distributions per season.
 * **Collinearity:** Actual temperature (`temp`) and "feels-like" temperature (`atemp`) exhibit a near-perfect correlation of $0.98$.
-
----
-
-## 📈 Visualizations
-![Distribution Histograms](images/histograms.png)
-*Distribution histograms showing right-skewed patterns for rental counts, casual users, and registered users.*
-
-![Correlation Heatmap](images/heatmap.png)
-*Correlation matrix highlighting the strong linear relationship between temp and atemp ($0.98$), alongside driver correlations with count.*
-
-![Weather Boxplot](images/weather-box.png)
-*Boxplot comparison of hourly rental demand across different weather categories.*
 
 ---
 
